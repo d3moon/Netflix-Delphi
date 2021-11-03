@@ -1,0 +1,68 @@
+unit projeto_netiflix;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.pngimage, Vcl.ExtCtrls,
+  Vcl.StdCtrls, Vcl.DBCtrls, Vcl.Mask, Data.DB, Data.Win.ADODB;
+
+type
+  TNetflix = class(TForm)
+    conexao: TADOConnection;
+    table: TADOTable;
+    tableNome: TWideStringField;
+    tableSobrenome: TWideStringField;
+    tableEndereço: TWideStringField;
+    tableEstado: TWideMemoField;
+    tableCartãodeCrédito: TIntegerField;
+    tableCVC: TFloatField;
+    tableEmail: TWideStringField;
+    tableSenha: TWideStringField;
+    Image1: TImage;
+    Label8: TLabel;
+    Button1: TButton;
+    DataSource1: TDataSource;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Label4: TLabel;
+    DBMemo1: TDBMemo;
+    Label5: TLabel;
+    DBEdit4: TDBEdit;
+    Label6: TLabel;
+    DBEdit5: TDBEdit;
+    Label7: TLabel;
+    DBEdit6: TDBEdit;
+    Label10: TLabel;
+    DBEdit7: TDBEdit;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Netflix: TNetflix;
+
+implementation
+
+{$R *.dfm}
+
+uses login;
+
+procedure TNetflix.Button1Click(Sender: TObject);
+
+begin
+
+login.Form2.ShowModal
+
+
+
+end;
+
+end.

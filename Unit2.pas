@@ -1,0 +1,59 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.pngimage,
+  Vcl.ExtCtrls, Data.DB, Vcl.Mask, Vcl.DBCtrls, Data.Win.ADODB;
+
+type
+  TLogin = class(TForm)
+    ADOConnection1: TADOConnection;
+    ADOTable1: TADOTable;
+    ADOTable1Código: TAutoIncField;
+    ADOTable1Nome: TWideStringField;
+    ADOTable1Sobrenome: TWideStringField;
+    ADOTable1Endereço: TWideStringField;
+    ADOTable1Estado: TWideMemoField;
+    ADOTable1CartãodeCrédito: TIntegerField;
+    ADOTable1CVC: TFloatField;
+    ADOTable1Email: TWideStringField;
+    ADOTable1Senha: TWideStringField;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    DataSource1: TDataSource;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Image1: TImage;
+    Image2: TImage;
+    Label3: TLabel;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Login: TLogin;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit4, Unit1;
+
+procedure TLogin.Button1Click(Sender: TObject);
+begin
+ if (dbedit1.text = Form1.DBEdit6.text) and (dbedit2.text = Form1.DBEdit7.text)
+
+ then
+
+  form4.showmodal
+
+
+end;
+
+end.

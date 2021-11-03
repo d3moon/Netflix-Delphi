@@ -1,0 +1,55 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.pngimage,
+  Vcl.ExtCtrls, Data.DB, Vcl.Mask, Vcl.DBCtrls, Data.Win.ADODB;
+
+type
+  TForm2 = class(TForm)
+    ADOConnection1: TADOConnection;
+    ADOTable1: TADOTable;
+    ADOTable1Código: TAutoIncField;
+    ADOTable1Nome: TWideStringField;
+    ADOTable1Sobrenome: TWideStringField;
+    ADOTable1Endereço: TWideStringField;
+    ADOTable1Estado: TWideMemoField;
+    ADOTable1CartãodeCrédito: TIntegerField;
+    ADOTable1CVC: TFloatField;
+    ADOTable1Email: TWideStringField;
+    ADOTable1Senha: TWideStringField;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    DataSource1: TDataSource;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Image1: TImage;
+    Image2: TImage;
+    Label3: TLabel;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.Button1Click(Sender: TObject);
+begin
+if(dbedit1= 'cbv') and (dbedit2= '3002')
+  then
+  form3.showmodal
+  else
+  messagebox (0,'Login ou Senha inválida',0)
+end;
+
+end.

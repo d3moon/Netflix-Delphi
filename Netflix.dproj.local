@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/10/26 13:48:50.000.649,=C:\Users\crypt\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/10/26 13:50:20.000.266,C:\Users\crypt\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\crypt\Documents\TCC\Code\Unit1.dfm</Transaction>
+    <Transaction>2020/10/26 13:50:20.000.266,C:\Users\crypt\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\crypt\Documents\TCC\Code\Unit1.pas</Transaction>
+    <Transaction>2020/10/26 13:50:44.000.672,C:\Users\crypt\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\crypt\Documents\TCC\Code\Netflix.dproj</Transaction>
+    <Transaction>2020/10/26 14:46:16.000.293,=C:\Users\crypt\Documents\TCC\Code\Unit2.pas</Transaction>
+    <Transaction>2020/10/26 14:59:44.000.295,=C:\Users\crypt\Documents\TCC\Code\Unit3.pas</Transaction>
+    <Transaction>2020/10/26 23:06:41.000.420,C:\Users\crypt\Documents\TCC\Code\Unit3.pas=</Transaction>
+    <Transaction>2020/10/26 23:06:46.000.133,=C:\Users\crypt\Documents\TCC\Code\Unit4.pas</Transaction>
+    <Transaction>2020/10/26 23:11:59.000.793,=C:\Users\crypt\Documents\TCC\Code\Unit4.pas</Transaction>
+    <Transaction>2020/10/26 23:15:22.000.099,=C:\Users\crypt\Documents\TCC\Code\ModelSupport_Netflix\default.txaPackage</Transaction>
+  </Transactions>
+</BorlandProject>
